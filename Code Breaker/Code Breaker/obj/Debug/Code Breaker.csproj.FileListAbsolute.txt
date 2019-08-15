@@ -1,0 +1,10 @@
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\bin\Debug\Code Breaker.exe.config
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\bin\Debug\Code Breaker.exe
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\bin\Debug\Code Breaker.pdb
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\obj\Debug\Code Breaker.csprojAssemblyReference.cache
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\obj\Debug\Code_Breaker.MainForm.resources
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\obj\Debug\Code_Breaker.Properties.Resources.resources
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\obj\Debug\Code Breaker.csproj.GenerateResource.cache
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\obj\Debug\Code Breaker.csproj.CoreCompileInputs.cache
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\obj\Debug\Code Breaker.exe
+C:\Users\Zach\Documents\GitHub\Code-Breaker-CSharp\Code Breaker\Code Breaker\obj\Debug\Code Breaker.pdb
