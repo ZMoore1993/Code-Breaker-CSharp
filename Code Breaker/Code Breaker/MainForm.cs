@@ -15,6 +15,7 @@ namespace Code_Breaker
         CodeBreakerEngine cb = new CodeBreakerEngine();
         string roundtxt;
         Timer stopwatch;
+        
         public MainForm()
         {
             InitializeComponent();
@@ -31,15 +32,18 @@ namespace Code_Breaker
 
         private void stopwatch_tick(object sender, EventArgs e)
         {
-            if (progressBar1.Value != progressBar1.Maximum)
+            if (progressBar1.Value != progressBar1.Maximum && cb.Round <= 10)
             {
                 progressBar1.Value++;
             }
             else
             {
                 stopwatch.Stop();
+                cb.RoundOver();
             }
+            
         }
+
 
         private void ResetForm()
         {
@@ -52,7 +56,7 @@ namespace Code_Breaker
                 {
                     b.Text = b.Text[b.Text.Length-1].ToString();
                     b.Click += new EventHandler(button_click);
-                    b.Enabled = true;
+                    b.Enabled = false;
                     num++;
                 }
             }
@@ -61,8 +65,10 @@ namespace Code_Breaker
 
         private void button_click(object sender, EventArgs e)
         {
-            ((Button)sender).Enabled = false;
-            cb.AddDigitToUserNumber(((Button)sender).Text);
+            Button btn = (Button)sender;
+            btn.Enabled = false;
+            cb.AddDigitToUserNumber(btn.Text);
+            lblNumber.Text += btn.Text;
         }
 
         private void BtnInstructions_Click(object sender, EventArgs e)
@@ -75,6 +81,13 @@ namespace Code_Breaker
         private void BtnStart_Click(object sender, EventArgs e)
         {
             btnStart.Enabled = false;
+            foreach (Button b in Controls.OfType<Button>().ToList())
+            {
+                if (!b.Name.Equals("btnInstructions") && !b.Name.Equals("btnStart"))
+                {
+                    b.Enabled = false;
+                }
+            }
             stopwatch.Start();
             stopwatch.Interval = 1000;
         }

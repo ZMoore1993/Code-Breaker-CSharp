@@ -42,6 +42,8 @@
             this.lblRound = new System.Windows.Forms.Label();
             this.btnInstructions = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
+            this.lblScore = new System.Windows.Forms.Label();
+            this.lblNumber = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -175,11 +177,30 @@
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.BtnStart_Click);
             // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Location = new System.Drawing.Point(41, 355);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(146, 17);
+            this.lblScore.TabIndex = 14;
+            this.lblScore.Text = "Current Game Score: ";
+            // 
+            // lblNumber
+            // 
+            this.lblNumber.AutoSize = true;
+            this.lblNumber.Location = new System.Drawing.Point(105, 63);
+            this.lblNumber.Name = "lblNumber";
+            this.lblNumber.Size = new System.Drawing.Size(0, 17);
+            this.lblNumber.TabIndex = 15;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(523, 428);
+            this.Controls.Add(this.lblNumber);
+            this.Controls.Add(this.lblScore);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnInstructions);
             this.Controls.Add(this.lblRound);
@@ -217,6 +238,8 @@
         private System.Windows.Forms.Label lblRound;
         private System.Windows.Forms.Button btnInstructions;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.Label lblNumber;
     }
 }
 
